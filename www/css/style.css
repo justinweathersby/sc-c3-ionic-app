@@ -1,0 +1,26 @@
+
+/* Empty. Add your own CSS if you like */
+.row, .scroll {
+  height: 100%;
+}
+
+.btn-dark:hover{
+  background-color: transparent;
+border-color: #EA4B4F;
+color: #EA4B4F;
+}
+
+.btn-dark{
+  background-color: #061626;
+  border: 4px solid #26344b;
+  box-shadow: 0 0 10px black;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  margin: 50px auto;
+  padding: 15px;
+  width:50%;
+  text-align: center;
+  font-family: 'Lato';
+  font-size:20px;
+}
