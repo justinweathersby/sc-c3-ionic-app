@@ -7,6 +7,8 @@ var app = angular.module('sc-c3-app', ['ionic'])
 
 app.run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
+    TestFairy.begin("993218db594324f249e28bfa5a72f74f0d21732d");
+    
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
@@ -37,7 +39,6 @@ app.controller('theCtrl', function($scope, $rootScope, $ionicPlatform, SCC3) {
       $scope.goToSite();
 
   });
-
 
   //--Have button to re-open the browser if closed
   $scope.goToSite = function() {
