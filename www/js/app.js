@@ -1,14 +1,10 @@
-// Ionic Starter App
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 var app = angular.module('sc-c3-app', ['ionic'])
 
 app.run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
-    TestFairy.begin("993218db594324f249e28bfa5a72f74f0d21732d");
-    
+    // TestFairy.begin("993218db594324f249e28bfa5a72f74f0d21732d");
+
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
@@ -22,11 +18,18 @@ app.run(function($ionicPlatform, $rootScope) {
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+
+    if (window.indexedDB){
+      console.log("Im in WKWebView!");
+    }
+    else{
+      console.log("im in uiwebview!");
+    }
   });
 })
 
 app.constant('SCC3', {
-    url: 'http://sc-c3-staging.herokuapp.com/'
+    url: 'https://sc-c3.org'
 });
 
 //
