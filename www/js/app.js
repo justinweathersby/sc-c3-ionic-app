@@ -29,7 +29,7 @@ app.run(function($ionicPlatform, $rootScope) {
 })
 
 app.constant('SCC3', {
-    url: 'https://sc-c3.org'
+    url: 'https://www.sc-c3.org/'
 });
 
 //
